@@ -1,0 +1,165 @@
+@media screen and (max-width: 1024px) {
+    .features .section-card-ctn, .great .section-card-ctn {
+        @apply w-[90%]
+    }
+
+    main .feedback .section-det-ctn {
+        @apply w-[40%]
+    }
+
+    main .card {
+        @apply w-[90%] ml-[5%]
+    }
+}
+
+@media screen and (max-width: 912px) {
+    main .features, main .great {
+        @apply h-fit
+    }
+
+    .features .section-det-ctn, .great .section-det-ctn {
+        @apply mt-[132px]
+    }
+
+    .features .section-card-ctn, .great .section-card-ctn {
+        @apply flex-col w-[65%] mb-[90px]
+    }
+
+    .features .feature-card, .great .great-card {
+        @apply w-[100%] mb-[42px]
+    } 
+
+    main .privacy {
+        @apply h-fit
+    }
+
+    .privacy img {
+        @apply mt-[90px]
+    }
+
+    .privacy .section-det-ctn {
+        @apply items-center mb-[90px]
+    }
+
+    .privacy .section-det-ctn .card-description {
+        @apply text-center
+    }
+
+    main .feedback {
+        @apply gap-10
+    }
+
+    main .feedback .section-det-ctn {
+        @apply w-[50%]
+    }
+
+    .trust .trust-img-ctn {
+        @apply gap-8
+    }
+
+    .card .section-title {
+        @apply text-[31px]
+    }
+
+    body footer {
+        @apply flex-col h-[900px] w-fit
+    }
+
+    footer .footer-left, footer .footer-mid {
+        @apply relative w-[100%] top-0 mt-[35px] mb-[40px] ml-[75px]
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav .nav-mid {
+        @apply hidden
+    }
+
+    main .feedback {
+        @apply h-fit 
+    }
+
+    main .feedback .section-det-ctn {
+        @apply w-[70%]
+    }
+
+    .section-det-ctn .card-description {
+        @apply text-center
+    }
+
+    .feedback .feedback-card {
+        @apply w-[70%] h-[375px] mt-[90px]
+    }
+
+    .feedback .section-det-ctn {
+        @apply mb-[90px]
+    }
+
+    .feedback .feedback-title {
+        @apply text-center
+    }
+
+    footer .footer-left, footer .footer-mid {
+        @apply ml-[50px]
+    }
+}
+
+@media screen and (max-width: 540px) {
+    header .hero-ctn {
+        @apply w-[90%]
+    }
+
+    .trust .section-det-ctn, .features .section-det-ctn, .privacy .section-det-ctn, .great .section-det-ctn {
+        @apply w-[90%]
+    }
+
+    .features .section-card-ctn, .great .section-card-ctn {
+        @apply w-[80%]
+    }
+
+    .section-det-ctn .button-ctn {
+        @apply w-[450px]
+    }
+
+    .trust .trust-img-ctn {
+        @apply relative w-[450px] overflow-scroll
+    }
+
+    footer .footer-left, footer .footer-mid {
+        @apply ml-[25px]
+    }
+}
+
+@media screen and (max-width: 478px) {
+    .nav-right  .log-in {
+        @apply hidden
+    }
+
+    .trust .trust-img-ctn {
+        @apply items-center justify-center w-[85%]
+    }
+
+    .trust .trust-img-ctn img {
+        @apply w-[100px] h-[100px]
+    } 
+
+    .features .section-card-ctn, .great .section-card-ctn {
+        @apply w-[95%]
+    }
+
+    .section-det-ctn .button-ctn {
+        @apply w-[100%]
+    }
+
+    .feedback .feedback-card {
+        @apply w-[90%] h-[375px] mt-[90px]
+    }
+
+    main .feedback .section-det-ctn {
+        @apply w-[90%]
+    }
+
+    .card .section-description {
+        @apply w-[95%]
+    }
+}

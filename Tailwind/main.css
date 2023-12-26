@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
+@import './media.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    @apply flex h-fit w-[100%] flex flex-col items-center
+}
+
+nav {
+    @apply flex flex-row justify-between h-[80px] w-[100%] bg-white items-center
+}
+
+nav img {
+    @apply ml-5 w-[100px]
+}
+
+.nav-mid {
+    @apply flex items-center
+}
+
+.nav-mid p {
+    @apply flex items-center text-lg font-medium relative cursor-default
+}
+
+.nav-mid p i {
+    @apply ml-[5px] mt-[5px]
+}
+
+.nav-right {
+    @apply flex items-center mr-5
+}
+
+.nav-right button {
+    @apply outline-none items-center flex justify-center rounded-lg h-[40px]
+}
+
+.log-in {
+    @apply border divide-y-2 divide-x-2 divide-black mr-7 text-base w-[80px] 
+
+    hover:bg-white-secondary
+}
+
+.sign-up {
+    @apply bg-dark-green text-white text-base w-[120px] border-none
+
+    hover:bg-secondary-green
+}
+
+.hero-ctn {
+    @apply w-[60%] flex flex-col items-center mt-20
+}
+
+.hero-ctn h1 {
+    @apply text-4xl font-semibold text-[#14191F] text-center leading-[55px]
+}
+
+.hero-text {
+    @apply text-2xl text-[#22262B] leading-9 mt-6 opacity-80 text-center
+}
+
+.demo-button {
+    @apply bg-[#00535C] text-white text-xl w-[170px] h-[50px] border-none outline-none rounded-lg font-semibold mt-[50px]
+
+    hover:bg-secondary-green
+}
+
+.hero-image {
+    @apply bottom-0 w-[75%] h-[400px] mt-[40px] bg-desktop bg-cover bg-center
+}
+
+main {
+    @apply flex flex-col
+}
+
+.trust {
+    @apply h-[400px] flex flex-col items-center justify-center 
+}
+
+.section-det-ctn {
+    @apply flex flex-col justify-center h-fit gap-2
+}
+
+.section-title {
+    @apply text-4xl font-semibold leading-[52px] text-center
+}
+
+.section-description {
+    @apply text-[20px] opacity-80 leading-8 text-center
+}
+
+.trust-img-ctn {
+    @apply flex flex-row items-center w-fit h-fit mt-[60px] gap-10
+}
+
+.trust-img-ctn img {
+    @apply w-[170px]
+}
+
+.features {
+    @apply flex flex-col h-[1400px] bg-white-secondary w-[100%] items-center justify-center gap-10
+}
+
+.section-card-ctn {
+    @apply flex flex-row flex-wrap h-fit w-[70%] justify-between
+}
+
+.feature-card {
+    @apply hover:bg-dark-green 
+}
+
+.section-card {
+    transition: all .5s ease-in-out;
+    @apply relative h-[475px] w-[48%] rounded-[20px] flex flex-col items-center border border-solid border-[#14191F19]
+}
+
+.card-details-ctn {
+    @apply flex flex-col  h-fit w-[90%] mb-[25px] mt-[30px]
+}
+
+.card-label {
+    @apply text-base text-dark-green font-bold leading-4 mb-2
+}
+
+/*.feature-card:hover .card-label, .feature-card:hover .card-headline, .feature-card:hover .card-description {
+    @apply text-white
+}
+
+.feature-card:hover img {
+    @apply hidden
+}*/ 
+
+.card-headline {
+    @apply text-myblack text-3xl leading-10 font-semibold mb-3
+}
+
+.card-description {
+    @apply text-secondary-black text-base leading-8 opacity-80
+}
+
+.section-card img {
+    @apply w-[80%] h-[200px]
+}
+
+/*.section-card:hover .learn-more {
+    @apply flex cursor-default
+}*/
+
+.learn-more {
+    @apply w-[90%] absolute bottom-[5%] font-semibold text-base hidden gap-[6px] items-center 
+}
+
+.privacy {
+    @apply h-[400px] w-[100%] bg-white flex flex-row flex-wrap items-center justify-center gap-[90px]
+}
+
+.privacy img {
+    @apply w-[231px] h-[244px]
+}
+
+.great {
+    @apply h-[1575px] w-[100%] bg-dark-green flex flex-col items-center justify-center gap-[100px]
+
+}
+
+.keep {
+    @apply hidden
+}
+
+.show {
+    @apply flex
+}
+
+.great-card {
+    @apply hover:bg-white
+}
+
+.great-card:hover img {
+    @apply hidden
+}
+
+.button-ctn {
+    background-color: rgba(255, 255, 255, 0.20);
+
+    @apply h-[70px] w-[550px] mt-[42px] flex flex-row flex-wrap items-center justify-center gap-2 relative
+}
+
+.button-ctn button {
+    @apply w-[48%] h-[85%] flex flex-row items-center justify-center text-white font-semibold opacity-65
+}
+
+.button-ctn .active {
+    @apply bg-white text-dark-green opacity-100
+}
+
+.feedback {
+    @apply h-[500px] w-[100%] flex flex-row flex-wrap items-center justify-center bg-white gap-[60px]
+}
+
+.feedback-card {
+    @apply relative w-[325px] h-[300px] flex flex-col bg-dark-green rounded-[18px] items-center justify-center gap-11
+}
+
+.card-det-ctn {
+    @apply flex flex-row gap-[10px] w-[90%] h-fit
+}
+
+.card-det-ctn img {
+    @apply w-[55px] h-[55px]
+}
+
+.user-det {
+    @apply flex flex-col 
+}
+
+.name {
+    @apply text-white font-semibold text-base leading-9
+}
+
+.description {
+    @apply text-white opacity-80 text-[13px] 
+}
+
+.feedback .section-det-ctn {
+    @apply w-[30%]
+}
+
+.feedback-det {
+    @apply text-white text-base opacity-95 w-[90%]
+}
+
+.feedback-title {
+    @apply text-4xl font-semibold leading-[52px] 
+}
+
+.card {
+    @apply w-[70%] h-[400px] bg-dark-green bg-vector bg-cover bg-center mt-[90px] mb-[90px] ml-[15%] flex flex-col items-center justify-center rounded-2xl gap-2
+}
+
+.demo-2 {
+    @apply text-[#00535C] bg-white text-xl w-[170px] h-[50px] border-none outline-none rounded-lg font-semibold mt-[50px]
+
+    hover:bg-green-pint
+}
+
+footer {
+    @apply w-[100%] h-[300px] flex flex-row flex-wrap justify-evenly
+}
+
+.footer-left {
+    @apply relative flex flex-col w-fit h-fit gap-5 top-[20%]
+}
+
+.footer-left > img {
+    @apply w-[150px]
+}
+
+.footer-left-det {
+    @apply text-myblack opacity-80 text-sm leading-6
+}
+
+.icon-ctn {
+    @apply flex flex-row items-center w-fit h-fit gap-4
+}
+
+.icon-ctn img {
+    @apply w-[30px] h-[30px]
+}
+
+.footer-mid {
+    @apply relative flex flex-col w-fit h-fit gap-5 top-[20%]
+}
+
+.footer-head {
+    @apply font-semibold text-[20px] leading-5 text-myblack
+}
+
+.footer-item {
+    @apply w-fit h-fit no-underline leading-5 flex flex-row items-center
+}
+
+.footer-item span {
+    @apply underline
+}
+
+.item-ctn {
+    @apply flex flex-col gap-2
+}
+
+/*-------------Hover states------------*/
+.feature-card:hover .card-label, .feature-card:hover .card-headline, .feature-card:hover .card-description {
+    @apply text-white
+}
+
+.feature-card:hover img {
+    @apply hidden
+} 
+
+.section-card:hover .learn-more {
+    @apply flex cursor-default
+}
