@@ -6,7 +6,7 @@
 I'm a self-taught front end developer
 
 
-# Tesla Cybertruck landing page
+# Earnify-clone
 
 A redesigned landing page for earnipay built using HTML, Tailwind-CSS and JavaScript.
 
