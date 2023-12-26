@@ -66,7 +66,7 @@
     }
 
     footer .footer-left, footer .footer-mid {
-        @apply relative w-[100%] top-0 mt-[35px] mb-[40px] ml-[75px]
+        @apply relative w-[100%] top-0 mt-[15px] mb-[20px] ml-[75px]
     }
 }
 
