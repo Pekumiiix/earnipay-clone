@@ -105,16 +105,16 @@
     display: none;
   }
 
+  .nav-right .menu-bar{
+    display: flex;
+  }
+
   header .menu{
     top: 7%;
   }
 
   .nav-right .log-in{
     display: none;
-  }
-
-  .nav-right i{
-    display: flex;
   }
 
   /*main .trust-img-ctn {
@@ -842,10 +842,6 @@ video {
   margin-top: 5px;
 }
 
-.hidden{
-  display: none;
-}
-
 .w-fit{
   width: -moz-fit-content;
   width: fit-content;
@@ -1010,6 +1006,10 @@ nav img{
 .sign-up:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(9 71 78 / var(--tw-bg-opacity));
+}
+
+.nav-right i{
+  display: none;
 }
 
 .menu{

@@ -85,16 +85,16 @@
         @apply hidden
     }
 
+    .nav-right .menu-bar {
+        @apply flex
+    }
+
     header .menu {
         @apply top-[7%]
     }
 
     .nav-right .log-in {
         @apply hidden
-    }
-
-    .nav-right i {
-        @apply flex
     }
 
     /*main .trust-img-ctn {

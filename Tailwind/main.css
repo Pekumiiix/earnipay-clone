@@ -55,6 +55,10 @@ nav img {
     hover:bg-secondary-green
 }
 
+.nav-right i {
+    @apply hidden
+}
+
 .menu {
     @apply absolute hidden flex-col items-center justify-center gap-2 h-fit w-[400px] rounded-lg bg-white-secondary right-0 top-[12%] mr-[20px]
 }
