@@ -26,3 +26,14 @@ function toggleSections() {
 }
 
 toggleSections()
+
+function toggleMenu() {
+    const menuButton = document.querySelector('.menu-bar') 
+    const menu = document.querySelector('.menu')
+
+    menuButton.addEventListener('click', () => {
+        menu.classList.toggle('show')
+    })
+}
+
+toggleMenu()

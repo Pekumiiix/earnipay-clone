@@ -71,7 +71,7 @@
   }
 
   body footer{
-    height: 900px;
+    height: 650px;
     width: -moz-fit-content;
     width: fit-content;
     flex-direction: column;
@@ -87,10 +87,43 @@
   }
 }
 
+@media screen and (max-width: 820px) {
+  main .trust-img-ctn{
+    height: -moz-fit-content;
+    height: fit-content;
+    gap: 0.5rem;
+  }
+
+  main .trust-img-ctn img{
+    height: 70px;
+    width: 40%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   nav .nav-mid{
     display: none;
   }
+
+  header .menu{
+    top: 7%;
+  }
+
+  .nav-right .log-in{
+    display: none;
+  }
+
+  .nav-right i{
+    display: flex;
+  }
+
+  /*main .trust-img-ctn {
+        @apply h-fit gap-2 
+    }
+
+    main .trust-img-ctn img {
+        @apply w-[40%] h-[70px] 
+    }*/
 
   main .feedback{
     height: -moz-fit-content;
@@ -125,6 +158,10 @@
 }
 
 @media screen and (max-width: 540px) {
+  header .menu{
+    top: 9%;
+  }
+
   header .hero-ctn{
     width: 90%;
   }
@@ -142,9 +179,7 @@
   }
 
   .trust .trust-img-ctn{
-    position: relative;
     width: 450px;
-    overflow: scroll;
   }
 
   footer .footer-left, footer .footer-mid{
@@ -153,19 +188,26 @@
 }
 
 @media screen and (max-width: 478px) {
-  .nav-right  .log-in{
-    display: none;
+  header .menu{
+    top: 7%;
+    width: 91%;
+  }
+
+  header .hero-image{
+    width: 95%;
+  }
+
+  main .trust{
+    height: 500px;
   }
 
   .trust .trust-img-ctn{
-    width: 85%;
-    align-items: center;
+    width: 95%;
     justify-content: center;
   }
 
   .trust .trust-img-ctn img{
-    height: 100px;
-    width: 100px;
+    height: 70px;
   }
 
   .features .section-card-ctn, .great .section-card-ctn{
@@ -191,9 +233,48 @@
   }
 }
 
-/*
-! tailwindcss v3.4.0 | MIT License | https://tailwindcss.com
-*/
+@media screen and (max-width: 400px) {
+  header .menu{
+    top: 8%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  header .menu{
+    top: 10%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .nav-right .sign-up{
+    display: none;
+  }
+
+  header .menu{
+    top: 10%;
+    width: 87%;
+  }
+
+  .features .feature-card, .great .great-card{
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+
+  .trust-img-ctn img{
+    width: 50px;
+    align-items: stretch;
+  }
+
+  main .card{
+    height: 500px;
+  }
+
+  .card .demo-2{
+    margin-bottom: 20px;
+  }
+}
+
+/*! tailwindcss v3.4.0 | MIT License | https://tailwindcss.com*/
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -737,6 +818,10 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.mb-2{
+  margin-bottom: 0.5rem;
+}
+
 .mb-\[42px\]{
   margin-bottom: 42px;
 }
@@ -749,8 +834,16 @@ video {
   margin-right: 0.5rem;
 }
 
+.mt-2{
+  margin-top: 0.5rem;
+}
+
 .mt-\[5px\]{
   margin-top: 5px;
+}
+
+.hidden{
+  display: none;
 }
 
 .w-fit{
@@ -864,6 +957,7 @@ nav img{
   margin-right: 1.25rem;
   display: flex;
   align-items: center;
+  gap: 1.25rem;
 }
 
 .nav-right button{
@@ -877,7 +971,6 @@ nav img{
 }
 
 .log-in{
-  margin-right: 1.75rem;
   width: 80px;
 }
 
@@ -917,6 +1010,39 @@ nav img{
 .sign-up:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(9 71 78 / var(--tw-bg-opacity));
+}
+
+.menu{
+  position: absolute;
+  right: 0px;
+  top: 12%;
+  margin-right: 20px;
+  display: none;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 400px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(242 247 248 / var(--tw-bg-opacity));
+}
+
+.menu p{
+  width: 90%;
+  cursor: default;
+  border-radius: 6px;
+  padding: 5px;
+  font-weight: 500;
+}
+
+.menu p:active{
+  border-width: 1px;
+  border-color: #14191F19;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .hero-ctn{
@@ -1024,7 +1150,9 @@ main{
   width: -moz-fit-content;
   width: fit-content;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   gap: 2.5rem;
 }
 

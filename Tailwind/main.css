@@ -36,7 +36,7 @@ nav img {
 }
 
 .nav-right {
-    @apply flex items-center mr-5
+    @apply flex items-center mr-5 gap-5
 }
 
 .nav-right button {
@@ -44,7 +44,7 @@ nav img {
 }
 
 .log-in {
-    @apply border divide-y-2 divide-x-2 divide-black mr-7 text-base w-[80px] 
+    @apply border divide-y-2 divide-x-2 divide-black text-base w-[80px] 
 
     hover:bg-white-secondary
 }
@@ -53,6 +53,16 @@ nav img {
     @apply bg-dark-green text-white text-base w-[120px] border-none
 
     hover:bg-secondary-green
+}
+
+.menu {
+    @apply absolute hidden flex-col items-center justify-center gap-2 h-fit w-[400px] rounded-lg bg-white-secondary right-0 top-[12%] mr-[20px]
+}
+
+.menu p {
+    @apply w-[90%] p-[5px] rounded-[6px] font-medium
+
+    active:border active:border-[#14191F19] active:bg-white cursor-default
 }
 
 .hero-ctn {
@@ -98,7 +108,7 @@ main {
 }
 
 .trust-img-ctn {
-    @apply flex flex-row items-center w-fit h-fit mt-[60px] gap-10
+    @apply flex flex-row items-center w-fit h-fit mt-[60px] gap-10 flex-wrap justify-center
 }
 
 .trust-img-ctn img {
